@@ -1,0 +1,35 @@
+#head {
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+#sub-head {
+    font-weight: bold;
+    font-size: 40 px;
+    color: indigo;
+    text-align: center;
+}
+
+#para-left {
+    text-align: left;
+    color: indigo ;
+    font-size: 20px;
+}
+#para-right {
+    text-align: right;
+    color: indigo ;
+    font-size: 20px;
+}
+
+#para-center {
+    text-align: center;
+    color: indigo ;
+    font-size: 20px;
+}
+
+div.rules {
+    display: inline-block;
+    margin: 10px;
+    padding: 2px;
+}

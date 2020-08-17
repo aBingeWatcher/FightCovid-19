@@ -45,20 +45,20 @@ class SelfTest extends Component {
                 <br/>
                 <br/>
                 <Jumbotron>
-                    <h1>Hello, User!</h1>
+                    <h1 style={{color:"indigo", fontWeight:"bold" }}>Hello, User!</h1>
                     <br/>
                     <p  style={{ textAlign:"left", fontSize:"20px" }}>
-                        <b>Disclaimer: </b>This test is not at all accurate. The purpose of this test is only to help 
-                        you make decisions about seeking appropriate medical care. 
+                        <b>Disclaimer: </b>This test is not at all accurate. <br/>The purpose of this test is only to help 
+                        you make decisions about seeking appropriate medical care. <br/> 
                         <b> DO NOT </b> panic based on the results, consult to your nearest
                         health center If you feel 
-                        any of the symptoms are persistent.
+                        any of the symptoms are persistent. <br/>
                         Also, We do not store any personal data during the session.
                     </p>
                 </Jumbotron>
                 <br/>
                 <br/>
-                <form onSubmit={this.handleSubmit}  className="white" style={{ width:"60%"}}>
+                <form onSubmit={this.handleSubmit}  className="white" style={{ width:"60%" }}>
                     <br/>
                     <h5 style={{ fontWeight:"bold", fontSize:"30px", marginLeft:"20px"}}>Enter your details <i class="fa fa-pencil" aria-hidden="true"></i> </h5>
                     <br/>

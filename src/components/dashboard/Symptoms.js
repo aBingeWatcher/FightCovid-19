@@ -56,14 +56,14 @@ const Symptoms= () => {
             <h5 style={{ textAlign:"center", fontWeight:"bold", color:"indigo", fontSize:"30px"}} > Most common symptoms </h5>
             <br/>
             <div data-aos="fade-up-right" data-aos-duration="1500">
-                <div class="gallery">
-                    <img  src={fever} alt="fever" width="330px" height="320px" />
+                <div class="severe">
+                    <img  src={fever} alt="fever" width="310px" height="320px" />
                 </div>
-                <div class="gallery">
-                    <img  src={cough} alt="cough" width="330px" height="320px" />
+                <div class="severe">
+                    <img  src={cough} alt="cough" width="310px" height="320px" />
                 </div>
-                <div class="gallery" >
-                    <img  src={breath} alt="breath" width="330px" height="320px" />
+                <div class="severe" >
+                    <img  src={breath} alt="breath" width="310px" height="320px" />
                 </div>
             </div>
             <br/>
@@ -97,28 +97,28 @@ const Symptoms= () => {
             <br/>
             <div data-aos="zoom-in" data-aos-duration="2000">
                 <div class="gallery">
-                    <img src={congestion} alt="congestion" width="251px" height="280px" />
+                    <img src={congestion} alt="congestion" width="248px" height="280px" />
                 </div>
                 <div class="gallery">
-                    <img src={ache} alt="ache" width="251px" height="280px" />
+                    <img src={ache} alt="ache" width="248px" height="280px" />
                 </div>
                 <div class="gallery">
-                    <img src={diarrhea} alt="diarrhea" width="251px" height="280px" />
+                    <img src={diarrhea} alt="diarrhea" width="248px" height="280px" />
                 </div>
                 <div class="gallery">
-                    <img src={nausea} alt="nausea" width="251px" height="280px" />
+                    <img src={nausea} alt="nausea" width="248px" height="280px" />
                 </div>
                 <div class="gallery">
-                    <img src={sorethroat} alt="sorethroat" width="251px" height="280px" />
+                    <img src={sorethroat} alt="sorethroat" width="248px" height="280px" />
                 </div>
                 <div class="gallery">
-                    <img src={tasteloss} alt="tasteloss" width="251px" height="280px" />
+                    <img src={tasteloss} alt="tasteloss" width="248px" height="280px" />
                 </div>
                 <div class="gallery" > 
-                    <img src={fatigue} alt="fatigue" width="251px" height="280px" />
+                    <img src={fatigue} alt="fatigue" width="248px" height="280px" />
                 </div>
                 <div class="gallery">
-                    <img  src={headache} alt="headache" width="251px" height="280px" />
+                    <img  src={headache} alt="headache" width="248px" height="280px" />
                 </div>
             </div>
             <br/>

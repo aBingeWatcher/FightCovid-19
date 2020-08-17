@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter, Switch, Route} from 'react-router-dom';
+import { BrowserRouter, Switch, Route} from 'react-router-dom';
 //import Navbar from './components/layout/Navbar';
 import WorldMap from './components/dashboard/WorldMap';
 import PlotGraph from './components/dashboard/PlotGraph';
@@ -16,8 +16,8 @@ import GlobalNews from './components/dashboard/GlobalNews';
 import Header from './images/header-img.jpg';
 import Prevent from './components/dashboard/Prevent';
 import Testing from './components/dashboard/Testing';
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"; //spinner css
-import Loader from 'react-loader-spinner';
+//import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"; //spinner css
+//import Loader from 'react-loader-spinner';
 
 
 
@@ -44,19 +44,12 @@ class App extends Component {
         <Sidebar />
 
         <div class="main_container" id="main">
-          <div style={{textAlign:"center"}}>
-            <Loader
-              type="Circles"
-              color="indigo"
-              height={80}
-              width={80}
-              timeout={3000} //3 secs
-            />
-            <img src={Header} alt="header" width="100%" height="380px" style={{boxShadow:"none"}} />
+          <div>
+            <img src={Header} alt="header" width="100%" height="380px" style={{boxShadow:"none",aspectRatio:"true"}} />
           </div>
           <Topbar />
           <div className="App container">
-            <HashRouter>
+            <BrowserRouter>
               <Switch>
                 <Route exact path='/' component={WorldMap} />
                 <Route path='/world-stats' component={PlotGraph}  />
@@ -70,7 +63,7 @@ class App extends Component {
                 <Route path='/india-graphs' component={IndiaGraph} />
                 <Route path='/india-CovidTesting' component={Testing} />
               </Switch>
-            </HashRouter>
+            </BrowserRouter>
           </div>
           <div style={{ backgroundColor:"#333" , color:"white", width:"100%"}}>
               <h5 style={{textAlign:"right", padding:"2px"}}> &copy; 2020 mG.FightCovid-19 </h5>

@@ -14,8 +14,14 @@
 
 div.gallery {
     border: 1px solid black;
-    margin: 3px;
-    display: inline-block;
+    margin: 2px;
+    display: inline;
+}
+
+div.severe {
+    border: 1px solid black;
+    margin: 12px;
+    display: inline;
 }
 
   

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route} from 'react-router-dom';
+import { HashRouter, Switch, Route} from 'react-router-dom';
 //import Navbar from './components/layout/Navbar';
 import WorldMap from './components/dashboard/WorldMap';
 import PlotGraph from './components/dashboard/PlotGraph';
@@ -49,7 +49,7 @@ class App extends Component {
           </div>
           <Topbar />
           <div className="App container">
-            <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <HashRouter basename={process.env.PUBLIC_URL}>
               <Switch>
                 <Route exact path='/' component={WorldMap} />
                 <Route path='/world-stats' component={PlotGraph}  />
@@ -63,7 +63,7 @@ class App extends Component {
                 <Route path='/india-graphs' component={IndiaGraph} />
                 <Route path='/india-CovidTesting' component={Testing} />
               </Switch>
-            </BrowserRouter>
+            </HashRouter>
           </div>
           <div style={{ backgroundColor:"#333" , color:"white", width:"100%"}}>
               <h5 style={{textAlign:"right", padding:"2px"}}> &copy; 2020 mG.FightCovid-19 </h5>

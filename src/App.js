@@ -49,10 +49,10 @@ class App extends Component {
           </div>
           <Topbar />
           <div className="App container">
-            <BrowserRouter history={history} basename={process.env.PUBLIC_URL}>
+            <BrowserRouter >
               <Switch>
-                <Route exact path='/' component={WorldMap} />
-                <Route path='/world-stats' component={PlotGraph}  />
+                <Route exact path={process.env.PUBLIC_URL + '/'} component={WorldMap} />
+                <Route path={process.env.PUBLIC_URL + '/world-stats'} component={PlotGraph}  />
                 <Route path='/aboutMe' component={AboutMe} />
                 <Route path='/indian-states' component={India} />
                 <Route path='/news-india' component={News} />

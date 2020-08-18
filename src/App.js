@@ -49,7 +49,7 @@ class App extends Component {
           </div>
           <Topbar />
           <div className="App container">
-            <BrowserRouter>
+            <BrowserRouter basename="/FightCovid-19">
               <Switch>
                 <Route exact path='/' component={WorldMap} />
                 <Route path='/world-stats' component={PlotGraph}  />

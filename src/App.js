@@ -49,7 +49,7 @@ class App extends Component {
           </div>
           <Topbar />
           <div className="App container">
-            <BrowserRouter basename="/FightCovid-19">
+            <BrowserRouter history={history} basename={process.env.PUBLIC_URL}>
               <Switch>
                 <Route exact path='/' component={WorldMap} />
                 <Route path='/world-stats' component={PlotGraph}  />

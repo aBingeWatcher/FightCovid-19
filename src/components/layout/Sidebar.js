@@ -7,10 +7,10 @@ const Sidebar= () => {
         <div class="sidebar" id="mySidebar">
             <button type="button" id="cross" class="closebtn"> <i class="fa fa-times" aria-hidden="true"></i> </button>
             <ul>
-                <li><a href='#/'>
+                <li><a href={process.env.PUBLIC_URL + '#/'}>
                     <span class="icon"><i class="fa fa-home"></i></span>
                     <span class="title">Home</span></a></li>
-                <li><a href='#/world-stats'>
+                <li><a href={process.env.PUBLIC_URL + '#/world-stats'} >
                     <span class="icon"><i class="fa fa-line-chart"></i></span>
                     <span class="title">World Statistics</span>
                 </a></li>

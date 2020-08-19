@@ -95,7 +95,7 @@ const WorldMap = () => {
            >
              <div className="container" style={{ backgroundColor:"cyan"}} >
                 <br/>
-                <img style={{ border:"3px solid black", margin:"auto"}} src={selectedCountry.countryInfo.flag} alt="flag" width="150px" height="110px" />
+                <img style={{ border:"3px solid black", margin:"auto"}} src={selectedCountry.countryInfo.flag} alt="Flag" width="150px" height="110px" />
                 <h1 style={{color:"grey",fontWeight:"bold",fontSize:"40px", textAlign:"right"}}>{selectedCountry.country} </h1>
                 <p style={{textAlign:"right"}}>Total Cases:<span style={{ fontWeight:"bold", fontSize:"20px"}}> {selectedCountry.cases} </span> </p>
                 <p style={{textAlign:"right"}}>Total Deaths:<span style={{ fontWeight:"bold", fontSize:"20px"}}> {selectedCountry.deaths} </span> </p>
